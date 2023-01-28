@@ -1,0 +1,74 @@
+﻿@model MVC.ViewModels.ArtistVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Artists</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RealName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RealName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityofLiving)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityofLiving)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SongId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SongId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlbumId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlbumId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
